@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Самый простой калькулятор</title>
+   <link rel="stylesheet" href="styles/index.css" />
+</head>
+ <body>
+   <div id="Beggining">
+    <h1>Калькулятор. Простых операций</h1>
+    <p>Выберите нужную операцию и считайте!</p>
+   </div>
+
+   <div>
+    <div>Значение 1</div><input id="value_1" />
+    <div>Значение 2</div><input id="value_2"  />
+  </div>
+  
+   <div>Типы операций</div>
+   <div id="operations_Buttons">
+    <button id="clojenie" class="operation" onclick="handleClickOperation('+')">Сложение чисел</button>
+    <button id="vichitanie" class="operation" onclick="handleClickOperation('-')">Вычитание чисел</button>
+    <button id="ymnojenie" class="operation" onclick="handleClickOperation('*')">Умножение чисел</button>
+    <button id="delenie" class="operation" onclick="handleClickOperation('/')">Деление чисел</button>
+    <button id="clojenie_strock" class="operation" onclick="handleClickOperation('Сложение строк')">Сложение строк</button>
+    <button id="clojenie_massivov" class="operation" onclick="handleClickOperation('Сложение массивов')">Посимвольное сложение массивов</button>
+    <button id="otricanie_znacheniya" class="operation" onclick="handleClickOperation('Отрицание значения')">Отрицание значения</button>
+   </div>
+   
+   <div>Выбранная операция</div>
+   <div id="selectedOperation"></div>
+
+   <div id="results_Buttons">
+    <button onclick="handleClickExecuteOperation()">Вычислить результат</button>
+    <button onclick="handleClickTypeOfOperation()">Проверка типа для операции</button>
+   </div>
+
+    <div id="resultWrapper">
+      <div>
+        Результат
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <div id="typeOFoperationWrapper">
+      <div>
+        Тип операции
+      </div>
+      <div id="type_of_operation"></div>
+    </div>
+
+   <div>
+    <p>Вот и весь кальулятор...</p><br>
+   </div>
+
+   <script src="js/index.js"></script>
+   
+ </body>
+</html>
